@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 23 Nov, 2019 2:48:00 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="in.co.rays.project_3.dto">
+    <class name="TimeTableDTO" table="ST_TIMETABLE">
+        <id name="id" type="java.lang.Long">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="subId" type="long">
+            <column name="SUBJECT_ID" />
+        
+        </property>
+        <property name="subName" type="java.lang.String">
+            <column name="SUBJECT_NAME" />
+        </property>
+        
+        <property name="courseId" type="long">
+            <column name="COURSE_ID" />
+        </property>
+
+        <property name="semester" type="java.lang.String">
+            <column name="SEMESTER" />
+        </property>
+
+
+
+        <property name="courseName" type="java.lang.String">
+            <column name="COURSE_NAME" />
+        </property>
+        <property name="examDate" type="java.util.Date">
+            <column name="EXAMDATE" />
+        </property>
+        
+        <property name="examTime" type="java.lang.String">
+            <column name="EXAMTIME" />
+        </property>
+
+
+
+        <property name="description" type="java.lang.String">
+            <column name="DESCRIPTION" />
+        </property>
+
+
+        <property name="createdBy" type="java.lang.String" length="50">
+            <column name="CREATED_BY" />
+        </property>
+        <property name="modifiedBy" type="java.lang.String" length="50">
+            <column name="MODIFIED_BY" />
+        </property>
+        <property name="createdDatetime" type="java.sql.Timestamp">
+            <column name="CREATED_DATETIME" />
+        </property>
+        <property name="modifiedDatetime" type="java.sql.Timestamp">
+            <column name="MODIFIED_DATETIME" />
+        </property>
+    </class>
+</hibernate-mapping>
